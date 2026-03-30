@@ -133,6 +133,23 @@
         "V1 synthesis confirmed",
         "V2.0 roadmap begins after V1 confirmed"
       ]
+    },
+    {
+      "id": "pipeline",
+      "name": "Pipeline",
+      "path": "~/pipeline",
+      "github": "papjamzzz/pipeline",
+      "port": 5561,
+      "status": "live",
+      "accomplished": [
+        "Terminal dashboard widget",
+        "Project tracker with todos per app",
+        "Live on GitHub"
+      ],
+      "next": [
+        "Add health check pings for each app port",
+        "Show last git push date per project"
+      ]
     }
   ]
 }
