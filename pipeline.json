@@ -1,0 +1,84 @@
+{
+  "projects": [
+    {
+      "id": "launcher",
+      "name": "Launcher",
+      "path": "~/launcher",
+      "github": "papjamzzz/launcher",
+      "port": 5554,
+      "status": "live",
+      "accomplished": ["Hub for all apps", "All apps linked and accessible"],
+      "next": ["Add health checks for each app", "Show app uptime in launcher UI"]
+    },
+    {
+      "id": "kalshi-konnektor",
+      "name": "Kalshi Konnektor",
+      "path": "~/kalshi-edge",
+      "github": "papjamzzz/kalshi-konnektor",
+      "port": 5555,
+      "status": "live",
+      "accomplished": ["Reference build for CK aesthetic", "Live Kalshi market data", "V1 complete"],
+      "next": ["V2.0 aesthetic refresh", "Add 2 new features"]
+    },
+    {
+      "id": "stream-fader",
+      "name": "Stream Fader",
+      "path": "~/streamfader",
+      "github": "papjamzzz/Stream-Fader",
+      "port": 5556,
+      "status": "live",
+      "accomplished": ["Live on GitHub", "Streaming controls working"],
+      "next": ["Polish UI", "V2.0 aesthetic refresh", "Add 2 new features"]
+    },
+    {
+      "id": "track-tracks",
+      "name": "Track Tracks",
+      "path": "~/track_cpu_monitor",
+      "github": "papjamzzz/Track-Tracks",
+      "port": 5557,
+      "status": "live",
+      "accomplished": ["Live on GitHub", "CPU/process monitoring"],
+      "next": ["V2.0 aesthetic refresh", "Add 2 new features"]
+    },
+    {
+      "id": "daw-doctor",
+      "name": "DAW Doctor",
+      "path": "~/ableton-diagnostics",
+      "github": "papjamzzz/Daw-Doctor",
+      "port": 5558,
+      "status": "live",
+      "accomplished": ["Live on GitHub", "Ableton diagnostics working"],
+      "next": ["V2.0 aesthetic refresh", "Add 2 new features"]
+    },
+    {
+      "id": "kalshi-trader",
+      "name": "KK Trader",
+      "path": "~/kalshi-trader",
+      "github": "papjamzzz/kalshi-trader",
+      "port": 5559,
+      "status": "live",
+      "accomplished": ["Autonomous Kalshi trading bot", "Live and running"],
+      "next": ["V2.0 aesthetic refresh", "Add 2 new features"]
+    },
+    {
+      "id": "kodekeeper",
+      "name": "Kode Keeper",
+      "path": "~/kodekeeper",
+      "github": "papjamzzz/kodekeeper",
+      "port": 5560,
+      "status": "live",
+      "accomplished": ["Claude Code mission control", "Live on GitHub"],
+      "next": ["V2.0 aesthetic refresh", "Add 2 new features"]
+    },
+    {
+      "id": "5i",
+      "name": "5i",
+      "path": "~/Desktop/creative-konsoles-website",
+      "github": "papjamzzz/creative-konsoles",
+      "port": 0,
+      "status": "in-progress",
+      "accomplished": ["5-model AI synthesis chain", "Consensus synthesis output", "Hardware VST aesthetic", "Analysis tools (agree detect, delta, consensus map)", "Developer tool aesthetic pass"],
+      "next": ["Confirm all 5 API keys working end-to-end", "V1 synthesis confirmed", "V2.0 roadmap begins after V1 confirmed"]
+    }
+  ]
+}
