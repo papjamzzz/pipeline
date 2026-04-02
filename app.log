@@ -1,0 +1,22 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5561
+[33mPress CTRL+C to quit[0m
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5561
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [01/Apr/2026 08:50:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2026 08:50:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [01/Apr/2026 08:50:46] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2026 08:51:16] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2026 08:52:14] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2026 08:52:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2026 08:52:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [01/Apr/2026 08:52:44] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2026 08:52:57] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2026 08:53:13] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2026 08:53:27] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [01/Apr/2026 08:55:45] "GET /api/status HTTP/1.1" 200 -
