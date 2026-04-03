@@ -80,7 +80,10 @@
         "Deployed to Railway — live at stream.creativekonsoles.com"
       ],
       "next": [
-        "V2.0 aesthetic refresh"
+        "Fix API keys — current data sources broken on Railway",
+        "V2 — expand data sources beyond current two APIs (results are weak)",
+        "Add: Letterboxd, Trakt, JustWatch, Metacritic, or similar richer sources",
+        "V2.0 aesthetic refresh — bring up to CK standard"
       ]
     },
     {
@@ -165,7 +168,7 @@
       "github": "papjamzzz/5i",
       "port": 5562,
       "status": "live",
-      "url": "https://web-production-041d1.up.railway.app",
+      "url": "https://5i.creativekonsoles.com",
       "accomplished": [
         "5-model parallel AI synthesis (GPT · Claude · Gemini · Grok · Mistral)",
         "All 5 API keys confirmed working end-to-end",
@@ -176,9 +179,11 @@
         "Subscription system — Stripe + Resend + SQLite",
         "BYOK support",
         "5i × Kalshi Fusion built as /kalshi-fusion route",
-        "V1 confirmed and stable"
+        "V1 confirmed and stable",
+        "Moved to 5i.creativekonsoles.com subdomain"
       ],
       "next": [
+        "Fix 2 API keys not loading on Railway — identify which models are failing",
         "Wire 5i × Kalshi consensus signal into KK Trader",
         "Track alpha gap hit rate over 30-60 real trades",
         "Name the Kalshi Fusion product properly"
@@ -191,7 +196,7 @@
       "github": "papjamzzz/5i",
       "port": null,
       "status": "live",
-      "url": "https://web-production-041d1.up.railway.app/kalshi-fusion",
+      "url": "https://5i.creativekonsoles.com/kalshi-fusion",
       "accomplished": [
         "5 AI models analyzing live Kalshi markets in parallel",
         "Alpha gap detection — AI consensus vs market price",
@@ -270,11 +275,11 @@
         "Directs visitors to 5i as flagship product"
       ],
       "next": [
-        "Add full suite section — all products with subdomains as they deploy",
-        "Add empathy.creativekonsoles.com card once EmpathyBot is live on Railway",
-        "Add kalshi.creativekonsoles.com card once Kalshi Fusion subdomain is set",
-        "Add keeper.creativekonsoles.com card once Kode Keeper is deployed",
-        "Update hero — position Creative Konsoles as a suite brand, not single product"
+        "Update hero — position Creative Konsoles as a suite brand, not single product",
+        "Add full suite section with all live subdomains: 5i, empathy, keeper, stream",
+        "Add social links — X (@creativekonsole), LinkedIn, Facebook",
+        "Link each product card to its subdomain",
+        "Clean up any remaining references to old web-production URLs"
       ]
     },
     {
