@@ -31,11 +31,13 @@
         "Multi-key Odds API rotation (up to 10 keys, park on 429, exhaust on 401)",
         "Pinnacle guest key integration",
         "ESPN fallback odds source",
-        "V1 complete"
+        "V1 complete",
+        "Railway deploy files added (Procfile, railway.json)",
+        "KALSHI_PRIVATE_KEY env var support added to kalshi_auth.py"
       ],
       "next": [
-        "V2.0 aesthetic refresh",
-        "Confirm live URL"
+        "Keep local only — personal tool with RSA private key",
+        "V2.0 aesthetic refresh"
       ]
     },
     {
