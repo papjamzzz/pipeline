@@ -296,6 +296,22 @@
         "Pin repos: 5i, kalshi-trader, Kalshi-Konnektor2, kodekeeper, empathybot, dk-konnektor",
         "Fill in confirmed live URLs for EmpathyBot, KK Trader, Kode Keeper, DK Konnektor, Kalshi Konnektor2"
       ]
+    },
+    {
+      "id": "ai-detector",
+      "name": "AI Detector",
+      "path": "~/ai-detector",
+      "github": "papjamzzz/ai-detector",
+      "port": null,
+      "status": "planned",
+      "accomplished": [],
+      "next": [
+        "Concept: paste or type text → detect if AI-written",
+        "Could embed inside 5i as a feature on the prompt input",
+        "Could also be its own standalone CK product",
+        "Research: open source models (GPTZero API, Sapling, Hello-SimpleAI) vs building custom classifier",
+        "V1 idea: run input through multiple detectors, show confidence score per model — same parallel pattern as 5i"
+      ]
     }
   ]
 }
