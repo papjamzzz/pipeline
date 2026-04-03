@@ -91,6 +91,7 @@ def get_all_statuses(pipeline):
             "github": project["github"],
             "port": project["port"],
             "status": project["status"],
+            "url": project.get("url", ""),
             "path": project["path"],
             "accomplished": project.get("accomplished", []),
             "next": project.get("next", []),
@@ -450,6 +451,79 @@ html, body {
 
 .roadmap-panel.accomplished .roadmap-item::before { color: var(--green); opacity: 0.5; }
 .roadmap-panel.next .roadmap-item::before { color: var(--amber); opacity: 0.6; }
+
+/* URL ROW */
+.url-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.url-text {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: #ff4d4d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+  text-decoration: none;
+}
+
+.url-text:hover { color: #ff7070; text-decoration: underline; }
+
+.copy-btn {
+  flex-shrink: 0;
+  background: #1e0a0a;
+  border: 1px solid #ff4d4d44;
+  color: #ff4d4d;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 7px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.copy-btn:hover {
+  background: #ff4d4d22;
+  border-color: #ff4d4d;
+}
+
+.copy-btn.copied {
+  background: #0a1e0a;
+  border-color: var(--green);
+  color: var(--green);
+}
+
+/* TOAST */
+#copy-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #111;
+  border: 1px solid var(--green);
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 8px 18px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 999;
+}
+
+#copy-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
 </style>
 </head>
 <body>
@@ -484,10 +558,18 @@ html, body {
         <span class="port-badge">:{{ p.port }}</span>
         {% endif %}
       </div>
-      <!-- Row 2: GitHub -->
+      <!-- Row 2: GitHub + URL -->
       <div class="card-row">
         <span class="github-text">github / {{ p.github }}</span>
       </div>
+      {% if p.url %}
+      <div class="card-row">
+        <div class="url-row">
+          <a class="url-text" href="{{ p.url }}" target="_blank" title="{{ p.url }}">{{ p.url }}</a>
+          <button class="copy-btn" onclick="copyUrl(this, '{{ p.url }}')">CC</button>
+        </div>
+      </div>
+      {% endif %}
       <!-- Row 3: Last commit -->
       <div class="card-row">
         {% if p.git.error %}
@@ -553,7 +635,24 @@ html, body {
   </div>
 </main>
 
+<div id="copy-toast">COPIED</div>
+
 <script>
+// Copy URL
+function copyUrl(btn, url) {
+  navigator.clipboard.writeText(url).then(() => {
+    btn.textContent = '✓';
+    btn.classList.add('copied');
+    const toast = document.getElementById('copy-toast');
+    toast.classList.add('show');
+    setTimeout(() => {
+      btn.textContent = 'CC';
+      btn.classList.remove('copied');
+      toast.classList.remove('show');
+    }, 1800);
+  });
+}
+
 // Clock
 function updateClock() {
   const now = new Date();
