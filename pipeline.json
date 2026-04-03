@@ -136,6 +136,7 @@
       "github": "papjamzzz/kodekeeper",
       "port": 5560,
       "status": "live",
+      "url": "https://keeper.creativekonsoles.com",
       "accomplished": [
         "Claude Code mission control dashboard",
         "Context oscilloscope, usage VU meters, cost tracker",
@@ -150,7 +151,7 @@
         "Live on GitHub"
       ],
       "next": [
-        "Confirm live URL",
+        "Deployed to Railway — live at keeper.creativekonsoles.com",
         "Test Call on Claude end-to-end with ANTHROPIC_API_KEY"
       ]
     },
