@@ -251,6 +251,26 @@
       ]
     },
     {
+      "id": "creativekonsoles-site",
+      "name": "creativekonsoles.com — Suite Landing Page",
+      "path": "~/creativekonsoles-site",
+      "github": "papjamzzz/creative-konsoles",
+      "port": null,
+      "status": "in-progress",
+      "url": "https://creativekonsoles.com",
+      "accomplished": [
+        "Brand landing page live",
+        "Directs visitors to 5i as flagship product"
+      ],
+      "next": [
+        "Add full suite section — all products with subdomains as they deploy",
+        "Add empathy.creativekonsoles.com card once EmpathyBot is live on Railway",
+        "Add kalshi.creativekonsoles.com card once Kalshi Fusion subdomain is set",
+        "Add keeper.creativekonsoles.com card once Kode Keeper is deployed",
+        "Update hero — position Creative Konsoles as a suite brand, not single product"
+      ]
+    },
+    {
       "id": "github-profile",
       "name": "GitHub Profile Homepage",
       "path": "~/papjamzzz",
