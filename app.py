@@ -474,6 +474,52 @@ html, body {
 
 .url-text:hover { color: #ff7070; text-decoration: underline; }
 
+/* LOCAL URL ROW */
+.local-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.local-text {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: #4db8ff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.local-text:hover { color: #80ccff; text-decoration: underline; opacity: 1; }
+
+.open-btn {
+  flex-shrink: 0;
+  background: #0a1020;
+  border: 1px solid #4db8ff44;
+  color: #4db8ff;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 7px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.open-btn:hover {
+  background: #4db8ff22;
+  border-color: #4db8ff;
+  color: #80ccff;
+}
+
 .copy-btn {
   flex-shrink: 0;
   background: #1e0a0a;
@@ -567,6 +613,14 @@ html, body {
         <div class="url-row">
           <a class="url-text" href="{{ p.url }}" target="_blank" title="{{ p.url }}">{{ p.url }}</a>
           <button class="copy-btn" onclick="copyUrl(this, '{{ p.url }}')">CC</button>
+        </div>
+      </div>
+      {% endif %}
+      {% if p.port and p.port > 0 %}
+      <div class="card-row">
+        <div class="local-row">
+          <a class="local-text" href="http://127.0.0.1:{{ p.port }}" target="_blank">127.0.0.1:{{ p.port }}</a>
+          <a class="open-btn" href="http://127.0.0.1:{{ p.port }}" target="_blank">OPEN</a>
         </div>
       </div>
       {% endif %}
