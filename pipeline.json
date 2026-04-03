@@ -95,7 +95,7 @@
         "Per-track Ableton CPU monitoring"
       ],
       "next": [
-        "Confirm live URL",
+        "Local only — PyQt6 desktop app, requires Ableton Live on Mac",
         "V2.0 aesthetic refresh"
       ]
     },
@@ -112,7 +112,7 @@
         "Plugin scan fix documented"
       ],
       "next": [
-        "Confirm live URL",
+        "Local only — Mac desktop app, diagnoses local Ableton/system",
         "V2.0 aesthetic refresh"
       ]
     },
