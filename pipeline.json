@@ -209,7 +209,8 @@
       "path": "~/empathybot",
       "github": "papjamzzz/empathybot",
       "port": 5564,
-      "status": "in-progress",
+      "status": "live",
+      "url": "https://web-production-ac123.up.railway.app",
       "accomplished": [
         "Voice-first UI — orb mic button with pulsing rings",
         "12 support type selection screen",
@@ -218,17 +219,19 @@
         "ElevenLabs TTS wired (Rachel voice) — /api/speak route built",
         "Full voice loop architecture complete: record → transcribe → Gemini → speak",
         "Glowing flower logo in place",
-        "Live on GitHub (papjamzzz/empathybot)"
+        "Live on GitHub (papjamzzz/empathybot)",
+        "TTS audio.play() bug fixed — Promise catch handler added",
+        "Deployed to Railway — live at web-production-ac123.up.railway.app",
+        "Procfile, railway.json, runtime.txt added for Railway deploy"
       ],
       "next": [
-        "Debug TTS playback — speech recognized but no voice returning yet",
-        "Test full end-to-end voice loop",
+        "Test full end-to-end voice loop on live URL",
         "Add coaching screen — user sets tone before first session",
         "Voice selector — let user pick companion voice",
         "Session memory across turns",
         "Mobile layout",
-        "Subscription gate + deploy to web",
-        "Confirm live URL"
+        "Subscription gate",
+        "Link empathy.creativekonsoles.com subdomain"
       ]
     },
     {
