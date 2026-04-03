@@ -480,7 +480,7 @@ html, body {
       <div class="card-row">
         <span class="project-name">{{ p.name }}</span>
         <div class="led {{ p.status }}" title="{{ p.status }}"></div>
-        {% if p.port > 0 %}
+        {% if p.port and p.port > 0 %}
         <span class="port-badge">:{{ p.port }}</span>
         {% endif %}
       </div>
