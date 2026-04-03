@@ -9,16 +9,18 @@
       "status": "live",
       "accomplished": [
         "Hub for all apps",
-        "All apps linked and accessible"
+        "All apps linked and accessible",
+        "5i × Kalshi Fusion added as dedicated card",
+        "Cards for all 10+ projects"
       ],
       "next": [
-        "Add health checks for each app",
-        "Show app uptime in launcher UI"
+        "Add health check pings per app port",
+        "Show last git push date per project"
       ]
     },
     {
       "id": "kalshi-konnektor",
-      "name": "Kalshi Konnektor",
+      "name": "Kalshi Konnektor (Reference Build)",
       "path": "~/kalshi-edge",
       "github": "papjamzzz/kalshi-konnektor",
       "port": 5555,
@@ -26,11 +28,40 @@
       "accomplished": [
         "Reference build for CK aesthetic",
         "Live Kalshi market data",
+        "Multi-key Odds API rotation (up to 10 keys, park on 429, exhaust on 401)",
+        "Pinnacle guest key integration",
+        "ESPN fallback odds source",
         "V1 complete"
       ],
       "next": [
         "V2.0 aesthetic refresh",
-        "Add 2 new features"
+        "Confirm live URL"
+      ]
+    },
+    {
+      "id": "kalshi-konnektor2",
+      "name": "Kalshi Konnektor 2 (Active Bot)",
+      "path": "~/Documents/New project/Kalshi-Konnektor2",
+      "github": "papjamzzz/Kalshi-Konnektor2",
+      "port": null,
+      "status": "live",
+      "accomplished": [
+        "Full autonomous trading bot — scans, enters, monitors, exits",
+        "Pinnacle guest key for sharp odds (sharpest book, no-vig = fair value)",
+        "Multi-key Odds API rotation via odds_keys.py",
+        "ESPN fallback odds source",
+        "CLAUDE.md re-entry file added",
+        "Parallel free odds aggregation: Pinnacle + Action Network + DraftKings",
+        "Free odds wired into aggregate_fair_probability() as live signals at every poll",
+        "Rebalanced weights: free sources 80%, paid Odds API now optional",
+        "Injury watcher (NBA/NHL/MLB)",
+        "MLB probable starter intelligence",
+        "Quote window monitor"
+      ],
+      "next": [
+        "Wire KK Trader to use 5i × Kalshi AI consensus as additional signal",
+        "Track actual hit rate vs alpha gap signal over 30-60 trades",
+        "Confirm Action Network + DraftKings returning data in logs"
       ]
     },
     {
@@ -42,12 +73,11 @@
       "status": "live",
       "accomplished": [
         "Live on GitHub",
-        "Streaming controls working"
+        "Streaming content crossfader working"
       ],
       "next": [
-        "Polish UI",
-        "V2.0 aesthetic refresh",
-        "Add 2 new features"
+        "Confirm live URL",
+        "V2.0 aesthetic refresh"
       ]
     },
     {
@@ -59,11 +89,11 @@
       "status": "live",
       "accomplished": [
         "Live on GitHub",
-        "CPU/process monitoring"
+        "Per-track Ableton CPU monitoring"
       ],
       "next": [
-        "V2.0 aesthetic refresh",
-        "Add 2 new features"
+        "Confirm live URL",
+        "V2.0 aesthetic refresh"
       ]
     },
     {
@@ -75,11 +105,12 @@
       "status": "live",
       "accomplished": [
         "Live on GitHub",
-        "Ableton diagnostics working"
+        "Ableton diagnostics working",
+        "Plugin scan fix documented"
       ],
       "next": [
-        "V2.0 aesthetic refresh",
-        "Add 2 new features"
+        "Confirm live URL",
+        "V2.0 aesthetic refresh"
       ]
     },
     {
@@ -94,8 +125,8 @@
         "Live and running"
       ],
       "next": [
-        "V2.0 aesthetic refresh",
-        "Add 2 new features"
+        "Wire to 5i × Kalshi consensus signal as input",
+        "Confirm live URL"
       ]
     },
     {
@@ -106,37 +137,75 @@
       "port": 5560,
       "status": "live",
       "accomplished": [
-        "Claude Code mission control",
+        "Claude Code mission control dashboard",
+        "Context oscilloscope, usage VU meters, cost tracker",
+        "Live project patch bay + git status rack",
+        "Bot health heartbeat monitor",
+        "Sidebar emoji icons replaced with modern inline SVGs",
+        "Call on Claude button — orange with blue glow, top bar",
+        "Call on Claude modal — 3 dynamic AI-generated context-aware suggestions",
+        "Streaming chat — letter-by-letter SSE via claude-sonnet",
+        "Command execution — Claude embeds commands, user clicks Run",
+        "README rewritten to Creative Konsoles uniform style",
         "Live on GitHub"
       ],
       "next": [
-        "V2.0 aesthetic refresh",
-        "Add 2 new features"
+        "Confirm live URL",
+        "Test Call on Claude end-to-end with ANTHROPIC_API_KEY"
       ]
     },
     {
       "id": "5i",
-      "name": "5i",
+      "name": "5i — Five Intelligences",
       "path": "~/5i",
       "github": "papjamzzz/5i",
-      "port": 0,
-      "status": "in-progress",
+      "port": 5562,
+      "status": "live",
+      "url": "https://web-production-041d1.up.railway.app",
       "accomplished": [
-        "5-model AI synthesis chain",
-        "Consensus synthesis output",
-        "Hardware VST aesthetic",
-        "Analysis tools (agree detect, delta, consensus map)",
-        "Developer tool aesthetic pass"
+        "5-model parallel AI synthesis (GPT · Claude · Gemini · Grok · Mistral)",
+        "All 5 API keys confirmed working end-to-end",
+        "Synthesis crash fixed — Gemini defensive parsing + cascade fallback",
+        "3-sentence response limit added to all models",
+        "Gemini→Claude→GPT→Mistral judge cascade for synthesis",
+        "Live on Railway — web-production-041d1.up.railway.app",
+        "Subscription system — Stripe + Resend + SQLite",
+        "BYOK support",
+        "5i × Kalshi Fusion built as /kalshi-fusion route",
+        "V1 confirmed and stable"
       ],
       "next": [
-        "Confirm all 5 API keys working end-to-end",
-        "V1 synthesis confirmed",
-        "V2.0 roadmap begins after V1 confirmed"
+        "Wire 5i × Kalshi consensus signal into KK Trader",
+        "Track alpha gap hit rate over 30-60 real trades",
+        "Name the Kalshi Fusion product properly"
       ]
     },
     {
-      "id": "cognitive-empathies",
-      "name": "Cognitive Empathies",
+      "id": "5i-kalshi-fusion",
+      "name": "5i × Kalshi — AI Edge Detector",
+      "path": "~/5i",
+      "github": "papjamzzz/5i",
+      "port": null,
+      "status": "live",
+      "url": "https://web-production-041d1.up.railway.app/kalshi-fusion",
+      "accomplished": [
+        "5 AI models analyzing live Kalshi markets in parallel",
+        "Alpha gap detection — AI consensus vs market price",
+        "Trade/Skip signal with confidence score and signal strength",
+        "Direct order execution from UI",
+        "Live market browser with real-time Kalshi data",
+        "Analysis history log",
+        "Listed on GitHub profile as second flagship",
+        "Dedicated card in Launcher"
+      ],
+      "next": [
+        "Wire output into KK Trader as autonomous signal",
+        "Give this product its own name"
+      ]
+    },
+    {
+      "id": "empathybot",
+      "name": "Cognitive Empathies (EmpathyBot)",
       "path": "~/empathybot",
       "github": "papjamzzz/empathybot",
       "port": 5564,
@@ -144,22 +213,22 @@
       "accomplished": [
         "Voice-first UI — orb mic button with pulsing rings",
         "12 support type selection screen",
-        "Whisper STT wired — mic records and transcribes speech correctly",
+        "Whisper STT wired — mic records and transcribes speech",
         "Gemini 2.0 Flash wired as AI brain",
         "ElevenLabs TTS wired (Rachel voice) — /api/speak route built",
         "Full voice loop architecture complete: record → transcribe → Gemini → speak",
-        "Renamed from EmpathyBot to Cognitive Empathies",
         "Glowing flower logo in place",
         "Live on GitHub (papjamzzz/empathybot)"
       ],
       "next": [
-        "NEXT SESSION: Debug TTS playback — speech recognized but no voice coming back yet",
-        "Test full end-to-end loop (record → transcribe → Gemini reply → ElevenLabs speak)",
+        "Debug TTS playback — speech recognized but no voice returning yet",
+        "Test full end-to-end voice loop",
         "Add coaching screen — user sets tone before first session",
         "Voice selector — let user pick companion voice",
         "Session memory across turns",
         "Mobile layout",
-        "Subscription gate + deploy to web"
+        "Subscription gate + deploy to web",
+        "Confirm live URL"
       ]
     },
     {
@@ -171,12 +240,34 @@
       "status": "live",
       "accomplished": [
         "Terminal dashboard widget",
-        "Project tracker with todos per app",
-        "Live on GitHub"
+        "Project tracker with accomplished/next per app",
+        "Live on GitHub",
+        "Updated to reflect full suite as of 2026-04-03"
       ],
       "next": [
-        "Add health check pings for each app port",
-        "Show last git push date per project"
+        "Auto-update from Claude sessions going forward",
+        "Show last git push date per project",
+        "Add health check pings per app port"
+      ]
+    },
+    {
+      "id": "github-profile",
+      "name": "GitHub Profile Homepage",
+      "path": "~/papjamzzz",
+      "github": "papjamzzz/papjamzzz",
+      "port": null,
+      "status": "live",
+      "url": "https://github.com/papjamzzz",
+      "accomplished": [
+        "Profile README created and live",
+        "5i and 5i × Kalshi listed as dual flagships",
+        "Full product suite listed with descriptions",
+        "Live URLs table with placeholders for unconfirmed deployments",
+        "Philosophy and bio sections"
+      ],
+      "next": [
+        "Pin repos: 5i, kalshi-trader, Kalshi-Konnektor2, kodekeeper, empathybot, dk-konnektor",
+        "Fill in confirmed live URLs for EmpathyBot, KK Trader, Kode Keeper, DK Konnektor, Kalshi Konnektor2"
       ]
     }
   ]
