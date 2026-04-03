@@ -73,12 +73,13 @@
       "github": "papjamzzz/Stream-Fader",
       "port": 5556,
       "status": "live",
+      "url": "https://stream.creativekonsoles.com",
       "accomplished": [
         "Live on GitHub",
-        "Streaming content crossfader working"
+        "Streaming content crossfader working",
+        "Deployed to Railway — live at stream.creativekonsoles.com"
       ],
       "next": [
-        "Confirm live URL",
         "V2.0 aesthetic refresh"
       ]
     },
