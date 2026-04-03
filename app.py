@@ -459,6 +459,9 @@ html, body {
     <h1>PIPELINE</h1>
     <div class="header-label">CK DEV PIPELINE v1.0 — JEREMIAH / PAPJAMZZZ</div>
   </div>
+  <div style="font-family:var(--font-mono);font-size:11px;color:var(--amber);letter-spacing:1px;border:1px solid var(--amber);padding:5px 14px;border-radius:4px;opacity:0.85;">
+    /sync — Claude reads session · updates accomplished/next · pushes to GitHub
+  </div>
   <div class="header-right">
     <div class="clock" id="clock">--:--:--</div>
     <div class="refresh-indicator" id="refresh-indicator">
