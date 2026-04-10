@@ -170,20 +170,20 @@
       "status": "live",
       "url": "https://5i.creativekonsoles.com",
       "accomplished": [
-        "5-model parallel AI synthesis (GPT · Claude · Gemini · Grok · Mistral)",
-        "All 5 API keys confirmed working end-to-end",
-        "Synthesis crash fixed — Gemini defensive parsing + cascade fallback",
-        "3-sentence response limit added to all models",
-        "Gemini→Claude→GPT→Mistral judge cascade for synthesis",
-        "Live on Railway — web-production-041d1.up.railway.app",
+        "5-model parallel AI synthesis (GPT · DeepSeek · Gemini · Grok · Mistral)",
+        "DeepSeek R1 wired — subbed in for Claude while API issue resolves",
+        "Gemini 2.5 Flash streaming fixed — 60s timeout + thinking token filter",
+        "All model display labels corrected to match live API calls",
+        "Production quality audit — 5 fixes committed (env vars, labels, DB logging, imports, README)",
+        "Synthesis judge cascade: Gemini → DeepSeek → GPT → Mistral",
+        "Live on Railway — 5i.creativekonsoles.com",
         "Subscription system — Stripe + Resend + SQLite",
         "BYOK support",
         "5i × Kalshi Fusion built as /kalshi-fusion route",
-        "V1 confirmed and stable",
-        "Moved to 5i.creativekonsoles.com subdomain"
+        "V1 confirmed and stable"
       ],
       "next": [
-        "Fix 2 API keys not loading on Railway — identify which models are failing",
+        "PRIORITY: Restore Claude Sonnet 4.5 — diagnose API 400 error, confirm key on Railway, swap back in",
         "Wire 5i × Kalshi consensus signal into KK Trader",
         "Track alpha gap hit rate over 30-60 real trades",
         "Name the Kalshi Fusion product properly"
