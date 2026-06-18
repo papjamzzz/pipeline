@@ -816,4 +816,5 @@ def api_update(project_id):
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5561, debug=False)
+    PORT = int(os.getenv("PORT", "5561"))
+    app.run(host="0.0.0.0", port=PORT, debug=False)
